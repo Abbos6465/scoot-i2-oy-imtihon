@@ -1,0 +1,140 @@
+.features{
+  padding-top: 160px;
+  padding-bottom: 200px;
+
+&__list {
+  position: relative;
+  z-index: 5;
+  display: block;
+  align-items: center;
+
+&::before {
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+  content: "";
+}
+}
+&__item {
+  width: 350px;
+
+
+&::before {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+  content: "";
+  background-image: url("../images/locate.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+&:nth-child(2)::before {
+  background-image: url("../images/scooter.svg");
+}
+
+&:nth-child(3)::before {
+  background-image: url("../images/ride.svg");
+}
+
+&:not(:last-child) {
+  margin-right: 30px;
+}
+}
+&__title {
+  margin-bottom: 27px;
+  font-weight: var(--font-weight);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--title-color);
+}
+
+&__text {
+  margin: 0;
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: 25px;
+  color: var(--text-color);
+}
+}
+
+@media only screen and (max-width:768px){
+  .features{
+    padding-top: 122px;
+    padding-bottom: 145px;
+  
+  &__list {
+    position: relative;
+    z-index: 5;
+    display: block;
+    align-items: center;
+  
+  &::before {
+    position: absolute;
+    top: -122px;
+    left: 13.5%;
+    z-index: -1;
+    height: 570px;
+    width: 15px;
+    background-color: #E5ECF4;
+    content: "";
+  }
+  }
+  &__item {
+    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  // margin-left: 79px;
+  &::before {
+    width: 96px;
+    height: 96px;
+    content: "";
+    background-image: url("../images/locate.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  
+  &:nth-child(2)::before {
+    background-image: url("../images/scooter.svg");
+  }
+  
+  &:nth-child(3)::before {
+    background-image: url("../images/ride.svg");
+  }
+  
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  }
+  &__title {
+    margin-bottom: 27px;
+    font-weight: var(--font-weight);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: var(--title-color);
+  }
+  
+  &__text {
+    width: 398px;
+    margin: 0;
+    font-family: var(--second-font-family);
+    font-weight: 400;
+    font-size: var(--font-size);
+    line-height: 25px;
+    color: var(--text-color);
+  }
+  }
+  
+}

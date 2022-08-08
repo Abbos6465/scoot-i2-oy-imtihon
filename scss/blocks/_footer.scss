@@ -1,0 +1,131 @@
+.site-footer{
+&__top {
+  width: 100%;
+  display: flex;
+  padding: 102px 0;
+  background-color: #495567;
+  background-image: url("../images/footer-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: calc(50% + 278px) 143px;
+
+&-inner {
+margin: 0 auto;
+}
+}
+
+&__insall{
+  margin: 0 auto;
+  text-align: center;
+justify-content: center;
+align-items: center; 
+}
+
+&__title-box {
+  width: 457px;
+text-align: center;
+}
+
+&__title {
+  text-align: center;
+  margin: 0;
+  font-weight: var(--font-weight);
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--white-color);
+}
+
+
+
+
+&__bottom {
+  padding-top: 35px;
+  padding-bottom: 33px;
+  background-color: #333A44;
+
+&-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+
+&__social {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-footer__social-link {
+  display: inline-block;
+  color: #FCB72B;
+  transition: all 0.5s ease;
+
+&:active {
+  color: #E5ECF4;
+  transition: all 0.5s ease;
+}
+
+
+&:not(:last-child) {
+  margin-right: 24px;
+}
+}
+}
+.install__link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 15px 9px 52px;
+  background-color: #E5ECF4;
+  border-radius: 4px;
+
+&::before {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  display: inline-block;
+  width: 24px;
+  height: 28px;
+  content: "";
+  background-image: url("../images/apple-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+&:nth-child(2)::before {
+  background-image: url("../images/play-market-icon.svg");
+}
+
+&--appstore {
+  margin-right: 18px;
+}
+}
+.install__top-strong {
+  display: block;
+  font-weight: var(--font-weight);
+  font-size: 10px;
+  line-height: var(--font-size);
+  letter-spacing: -0.446429px;
+  color: var(--title-color);
+}
+
+.install__bottom-strong {
+  display: block;
+  font-weight: var(--font-weight);
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: var(--title-color);
+}
+.footer-logo {
+  margin-right: 58px;
+  color: var(--white-color);
+}
+
+.install{
+  margin-top: 40px;
+  text-align: center;
+}

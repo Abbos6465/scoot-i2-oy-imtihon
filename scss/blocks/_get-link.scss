@@ -1,0 +1,28 @@
+.get-link {
+  display: inline-block;
+  padding: 11px 36px;
+  margin-left: auto;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: 25px;
+  color: var(--white-color);
+  background-color: var(--link-bg-color);
+  border: 3px solid #FCB72B;
+  transition: all 0.5s ease;
+
+&:active {
+  color: var(--link-bg-color);
+  background-color: var(--white-color);
+  transition: all 0.5s ease;
+}
+}
+
+.site-header-svn{
+  display: inline-block;
+}
+
+@media only screen and (max-width:576px){
+  .site-header-svn{
+    display: none;
+  }  
+}

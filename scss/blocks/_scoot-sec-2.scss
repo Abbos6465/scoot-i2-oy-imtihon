@@ -1,0 +1,196 @@
+.intro {
+  padding: 153px 0;
+  background-image: url("../../images/footer-circles.svg"), url("../../images/hero-bgi.png");
+  background-size: 234px 62px, cover;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 631px) calc(50% + 140px), center;
+
+
+&__inner {
+  width: 500px;
+  color: #a5a5a5;
+}
+
+&__title {
+  margin-bottom: 40px;
+  font-weight: var(--font-weight);
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: var(--white-color);
+}
+
+&__text-box {
+  width: 405px;
+  margin-left: 95px;
+}
+
+.intro__text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-bottom: 40px;
+  font-family: var(--second-font-family);
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+
+&::before {
+  content: "";
+
+  position: absolute;
+  top: 43%;
+  left: -64%;
+  z-index: 3;
+  width: 203px;
+  height: 15px;
+  background-color: var(--link-bg-color);
+}
+
+&::after {
+  content: "";
+  position: absolute;
+  top: 43%;
+  right: -118%;
+  z-index: 3;
+  width: 447px;
+  height: 138px;
+  background-image: url("../images/hero-arrow.svg");
+  background-size: 447px 138px;
+  background-repeat: no-repeat;
+}
+}
+}
+
+@media only screen and (max-width:768px){
+
+  .intro {
+    padding-top: 137px;
+    padding-bottom: 217px;
+    background-size: 234px 62px, cover;
+    background-image: url("../../images/footer-circles.svg"), url("../../images/tablet-scoot.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 631px) calc(50% + 140px), center;
+  
+  
+  &__inner {
+    margin: 0 auto;
+    color: blue;
+  }
+  
+  &__title {
+  width: 573px;
+  text-align: center;
+    font-weight: var(--font-weight);
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: var(--white-color);
+  }
+  
+  &__text-box {
+    width: 573px;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .intro__text {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-bottom: 40px;
+    font-family: var(--second-font-family);
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+  
+  &::before {
+    content: "";
+   display: none;
+  
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: -50%;
+    z-index: 3;
+    width: 447px;
+    height: 138px;
+    background-image: url("../images/hero-arrow.svg");
+    background-size: 447px 138px;
+    background-repeat: no-repeat;
+  }
+  }
+  }
+}
+
+@media only screen and (max-width:576px){
+
+  .intro {
+    padding-top: 115px;
+    padding-bottom: 181px;
+    background-size: cover;
+    background-image: url("../../images/mobile-scoot.png"), url("../../images/mobile-scoot.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 631px) calc(50% + 140px), center;
+  
+  
+  &__inner {
+    margin: 0 auto;
+    color: blue;
+  }
+  
+  &__title {
+    margin: 0 auto;
+  width: 400px;
+  height: 120px;
+  text-align: center;
+    font-weight: var(--font-weight);
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: var(--white-color);
+  }
+  
+  &__text-box {
+    width: 311px;
+    margin-left: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .intro__text {
+    text-align: center;
+    position: relative;
+    margin-top: 70px;
+    z-index: 1;
+    display: flex;
+    margin-bottom: 40px;
+    font-family: var(--second-font-family);
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+  
+  &::before {
+    content: "";
+   display: none;
+  
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: -50%;
+    z-index: 3;
+    width: 447px;
+    height: 138px;
+    background-image: url("../images/hero-arrow.svg");
+    background-size: 447px 138px;
+    background-repeat: no-repeat;
+  }
+  }
+  }
+}

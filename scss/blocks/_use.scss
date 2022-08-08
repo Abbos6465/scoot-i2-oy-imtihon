@@ -1,0 +1,222 @@
+.use {
+  padding-bottom: 200px;
+}
+
+.item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+&:nth-child(1):after {
+  position: absolute;
+  z-index: 3;
+  bottom: 7px;
+  right: -155px;
+  width: 735px;
+  height: 138px;
+  content: "";
+  background-image: url("../images/easy-arrow.svg");
+  background-size: 735px 138px;
+  background-repeat: no-repeat;
+}
+
+&:nth-child(2)::before {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: -47%;
+  width: 735px;
+  height: 138px;
+  content: "";
+  background-image: url("../images/coming-arrow.svg");
+  background-size: 735px 138px;
+  background-repeat: no-repeat;
+}
+
+&:nth-child(3):after {
+  position: absolute;
+  z-index: 3;
+  top: 19%;
+  right: -47%;
+  width: 735px;
+  height: 138px;
+  content: "";
+  background-image: url("../images/zero-arrow.svg");
+  background-size: 735px 138px;
+  background-repeat: no-repeat;
+}
+
+&:not(:last-child) {
+  margin-bottom: 160px;
+}
+
+&__inner {
+  width: 445px;
+}
+
+&__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: var(--font-weight);
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--title-color);
+}
+
+&__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: var(--second-font-family);
+  font-size: var(--font-size);
+  line-height: 25px;
+  color: var(--text-color);
+}
+
+&__link {
+  display: inline-block;
+  padding: 11px 41px;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: 25px;
+  color: var(--white-color);
+  background-color: var(--link-bg-color);
+  border: 3px solid var(--link-bg-color);
+  transition: all 0.5s ease;
+
+
+&:active {
+  color: var(--link-bg-color);
+  background-color: var(--white-color);
+  transition: all 0.5s ease;
+}
+}
+&__img {
+  border-radius: 50%;
+  box-shadow: 500px 0 0 0 #E5ECF4;
+
+&--coming {
+  box-shadow: -500px 0 0 0 #E5ECF4;
+}
+}
+}
+
+@media only screen and (max-width:768px){
+
+  .use {
+    padding-bottom: 104px;
+  }
+  
+  .item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    justify-content: space-between;
+  
+&:nth-child(2){
+flex-direction: column;
+}
+  
+  &:nth-child(1):after {
+    position: absolute;
+    z-index: 3;
+    top: 300px;
+    right: -30px;
+    width: 735px;
+    height: 138px;
+    content: "";
+    background-image: url("../images/easy-arrow.svg");
+    background-size: 735px 138px;
+    background-repeat: no-repeat;
+  }
+  
+  &:nth-child(2)::before {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: -60%;
+    width: 735px;
+    height: 138px;
+    content: "";
+    background-image: url("../images/coming-arrow.svg");
+    background-size: 735px 138px;
+    background-repeat: no-repeat;
+  }
+  
+  &:nth-child(3):after {
+    position: absolute;
+    z-index: 3;
+    top: 10%;
+    right: -58%;
+    width: 735px;
+    
+    height: 138px;
+    content: "";
+    background-image: url("../images/zero-arrow.svg");
+    background-size: 735px 138px;
+    background-repeat: no-repeat;
+  }
+  
+  &:not(:last-child) {
+    margin-bottom: 160px;
+  }
+  
+  &__inner {
+    margin-top: 56px;
+    width: 573px;
+    text-align: center;
+  }
+  
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: var(--font-weight);
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: var(--title-color);
+  }
+  
+  &__text {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: var(--second-font-family);
+    font-size: var(--font-size);
+    line-height: 25px;
+    color: var(--text-color);
+  }
+  
+  &__link {
+    display: inline-block;
+    padding: 11px 41px;
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    line-height: 25px;
+    color: var(--white-color);
+    background-color: var(--link-bg-color);
+    border: 3px solid var(--link-bg-color);
+    transition: all 0.5s ease;
+  
+  
+  &:active {
+    color: var(--link-bg-color);
+    background-color: var(--white-color);
+    transition: all 0.5s ease;
+  }
+  }
+  &__img {
+    border-radius: 50%;
+    box-shadow: 500px 0 0 0 #E5ECF4;
+  
+  &--coming {
+    box-shadow: -500px 0 0 0 #E5ECF4;
+  }
+  }
+  }
+}

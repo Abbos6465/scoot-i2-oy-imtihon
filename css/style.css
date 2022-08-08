@@ -568,17 +568,17 @@ ul {
 .features__list {
   position: relative;
   z-index: 5;
-  display: block;
+  display: flex;
   align-items: center;
 }
 .features__list::before {
-  position: static;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 0px;
-  height: 0px;
-  background-color: transparent;
+  position: absolute;
+  top: 41px;
+  left: -14%;
+  z-index: -1;
+  width: 974px;
+  height: 15px;
+  background-color: #E5ECF4;
   content: "";
 }
 .features__item {
